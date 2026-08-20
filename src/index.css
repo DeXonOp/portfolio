@@ -4,7 +4,8 @@
   --bg-color: #0a0a0a;
   --text-color: #ffffff;
   --text-muted: #888888;
-  --accent-color: #6366f1; /* Neon indigo/purple accent */
+  --accent-color: #6366f1;
+  /* Neon indigo/purple accent */
   --accent-hover: #4f46e5;
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
@@ -22,13 +23,15 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   overflow-x: hidden;
-  cursor: none; /* For custom cursor */
+  cursor: none;
+  /* For custom cursor */
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  cursor: none; /* Handled by custom cursor */
+  cursor: none;
+  /* Handled by custom cursor */
 }
 
 button {
@@ -71,9 +74,17 @@ button {
   transform: translateY(0);
 }
 
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
 
 /* Layout Utilities */
 .container {
@@ -89,7 +100,7 @@ section {
   flex-direction: column;
 }
 
-section > .container {
+section>.container {
   margin-top: auto;
   margin-bottom: auto;
 }
