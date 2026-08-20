@@ -1,0 +1,20 @@
+.sticky-container {
+  /* No height specified here, it will wrap the content. 
+     Wait! If it's sticky, it needs space to scroll past! 
+     Ah! If it's position sticky but its parent is just `<main>`, it will stick until `<main>` finishes. 
+     So the height of `.sticky-container` will just be the height of the content. 
+     Wait, if its height is the height of the content, it won't scroll at all because it takes exactly that much space in its parent!
+     To make a sticky element stick for a duration, it MUST be inside a taller parent OR they must share a parent.
+  */
+  width: 100%;
+}
+
+.sticky-content-wrapper {
+  width: 100%;
+  transform-origin: top center;
+  will-change: transform, filter;
+  background-color: var(--bg-color); /* CRITICAL: Hides the section behind it */
+  box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.4);
+  /* Ensure min-height is 100vh so it covers the whole screen when sliding up */
+  min-height: 100vh;
+}
