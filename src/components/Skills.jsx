@@ -35,7 +35,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
-              className={`skill-card glass-card reveal reveal-delay-${(index % 3) + 1} hoverable`}
+              className={`skill-card reveal reveal-delay-${(index % 3) + 1} hoverable`}
             >
               <div className="skill-icon">{category.icon}</div>
               <h3>{category.title}</h3>
