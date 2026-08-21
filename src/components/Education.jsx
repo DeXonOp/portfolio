@@ -66,7 +66,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="education-section">
+    <section className="education-section">
       <div className="shape edu-shape-1"></div>
       <div className="shape edu-shape-2"></div>
       <div className="container">

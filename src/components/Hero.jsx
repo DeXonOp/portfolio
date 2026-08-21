@@ -3,7 +3,7 @@ import HeroAnimation from './HeroAnimation';
 
 const Hero = () => {
   return (
-    <section id="hero" className="hero-section">
+    <section className="hero-section">
       <div className="container hero-content">
         <div className="hero-grid">
           <div className="hero-text">

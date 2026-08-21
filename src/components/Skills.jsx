@@ -62,7 +62,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="skills-section">
+    <section className="skills-section">
       <div className="shape skills-shape-1"></div>
       <div className="shape skills-shape-2"></div>
       <div className="container">

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './StickySection.css';
 
-const StickySection = ({ children, zIndex }) => {
+const StickySection = ({ children, zIndex, id }) => {
   const trackerRef = useRef(null);
   const containerRef = useRef(null);
   const contentRef = useRef(null);
@@ -69,7 +69,7 @@ const StickySection = ({ children, zIndex }) => {
   return (
     <>
       {/* Invisible tracker in normal flow */}
-      <div ref={trackerRef} style={{ height: '0px', width: '100%' }} />
+      <div id={id} ref={trackerRef} style={{ height: '0px', width: '100%' }} />
 
       {/* Sticky container */}
       <div

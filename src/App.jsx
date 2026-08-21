@@ -19,19 +19,19 @@ function App() {
       <CustomCursor />
       <Header />
       <main style={{ position: 'relative' }}>
-        <StickySection zIndex={1}>
+        <StickySection zIndex={1} id="hero">
           <Hero />
         </StickySection>
-        <StickySection zIndex={2}>
+        <StickySection zIndex={2} id="about">
           <About />
         </StickySection>
-        <StickySection zIndex={3}>
+        <StickySection zIndex={3} id="skills">
           <Skills />
         </StickySection>
-        <StickySection zIndex={4}>
+        <StickySection zIndex={4} id="education">
           <Education />
         </StickySection>
-        <StickySection zIndex={5}>
+        <StickySection zIndex={5} id="contact">
           <Contact />
         </StickySection>
       </main>
