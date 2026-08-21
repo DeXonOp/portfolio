@@ -1,4 +1,6 @@
 .about-section {
+  position: relative;
+  overflow: hidden;
   background-color: #050505;
   /* Slightly darker to differentiate sections */
 }
@@ -43,4 +45,22 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+}
+
+.about-shape-1 {
+  width: 350px;
+  height: 350px;
+  background-color: #00ffcc; /* Cyan glow */
+  top: 10%;
+  left: -150px;
+  animation-delay: -2s;
+}
+
+.about-shape-2 {
+  width: 250px;
+  height: 250px;
+  background-color: #8a2be2; /* BlueViolet */
+  bottom: 5%;
+  right: -50px;
+  animation-delay: -6s;
 }

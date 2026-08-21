@@ -1,5 +1,7 @@
 .contact-section {
-  padding-bottom: 10rem;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 2rem;
 }
 
 .contact-content {
@@ -63,4 +65,22 @@
     flex-direction: column;
     text-align: left;
   }
+}
+
+.contact-shape-1 {
+  width: 380px;
+  height: 380px;
+  background-color: #ff3366; /* Coral/Pink */
+  top: -10%;
+  left: -150px;
+  animation-delay: -4s;
+}
+
+.contact-shape-2 {
+  width: 280px;
+  height: 280px;
+  background-color: #ffff00; /* Yellow */
+  bottom: 0;
+  right: -50px;
+  animation-delay: -9s;
 }

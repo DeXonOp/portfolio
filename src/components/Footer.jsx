@@ -7,7 +7,10 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer-content">
-        <div className="footer-logo">AP.</div>
+        <div className="footer-logo">
+          <img src="/profile.png" alt="Ayon Pal" className="logo-img" />
+          Ayon
+        </div>
         <div className="footer-copyright">
           &copy; {year} Ayon Pal. Designed with &hearts; and Code.
         </div>

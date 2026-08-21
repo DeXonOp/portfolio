@@ -132,3 +132,23 @@ section>.container {
 }
 
 /* Specific Component Styles will go to modules or remain here if small */
+
+/* Global Abstract Background Shapes */
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 1;
+  opacity: 0.5;
+  animation: float 10s infinite ease-in-out alternate;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(50px, 50px) scale(1.1);
+  }
+}

@@ -5,6 +5,8 @@ import { FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/
 const Contact = () => {
   return (
     <section id="contact" className="contact-section">
+      <div className="shape contact-shape-1"></div>
+      <div className="shape contact-shape-2"></div>
       <div className="container">
         <h2 className="section-title reveal">Get In Touch</h2>
         

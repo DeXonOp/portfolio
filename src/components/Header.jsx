@@ -5,7 +5,10 @@ const Header = () => {
   return (
     <header className="header glass-card">
       <div className="header-container">
-        <a href="#hero" className="logo">AP.</a>
+        <a href="#hero" className="logo">
+          <img src="/profile.png" alt="Ayon Pal" className="logo-img" />
+          Ayon
+        </a>
         <nav className="nav-links">
           <a href="#about" className="nav-link">About</a>
           <a href="#skills" className="nav-link">Skills</a>

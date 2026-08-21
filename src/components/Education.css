@@ -113,7 +113,7 @@
   
   .education-right {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 50;
     width: 100%;
   }
 
@@ -133,4 +133,22 @@
   .sticky-card {
     padding: 2.5rem 2rem;
   }
+}
+
+.edu-shape-1 {
+  width: 450px;
+  height: 450px;
+  background-color: #00aaff; /* Deep Blue/Azure */
+  top: 25%;
+  right: -200px;
+  animation-delay: -1s;
+}
+
+.edu-shape-2 {
+  width: 350px;
+  height: 350px;
+  background-color: #33ff33; /* Neon Green */
+  bottom: 5%;
+  left: -200px;
+  animation-delay: -8s;
 }
