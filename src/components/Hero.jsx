@@ -1,4 +1,5 @@
 import './Hero.css';
+import HeroAnimation from './HeroAnimation';
 
 const Hero = () => {
   return (
@@ -18,8 +19,8 @@ const Hero = () => {
               <a href="#contact" className="btn primary-btn hoverable">Let's Talk</a>
             </div>
           </div>
-          <div className="hero-image-container reveal reveal-delay-2">
-            <img src="/profile.png" alt="Ayon Pal" className="hero-image hoverable" />
+          <div className="hero-animation-wrapper reveal reveal-delay-2">
+            <HeroAnimation />
           </div>
         </div>
       </div>

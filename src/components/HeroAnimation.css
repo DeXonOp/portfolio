@@ -1,0 +1,116 @@
+.hero-animation-container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Central Profile Image */
+.center-profile-container {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.center-profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(99, 102, 241, 0.5);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.4);
+  position: relative;
+  z-index: 2;
+}
+
+.pulse-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+  animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  z-index: 1;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+/* Floating Icons */
+.floating-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(20, 20, 25, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  font-size: 2rem;
+  color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.floating-icon:hover {
+  cursor: none;
+  background: rgba(99, 102, 241, 0.2);
+  border-color: rgba(99, 102, 241, 0.5);
+}
+
+/* Icon specific positioning and sizing */
+.icon-react {
+  top: 10%;
+  left: 5%;
+  width: 90px;
+  height: 90px;
+  font-size: 3.5rem;
+  color: #61dafb;
+}
+
+.icon-js {
+  bottom: 15%;
+  right: 5%;
+  width: 80px;
+  height: 80px;
+  font-size: 3rem;
+  color: #f7df1e;
+}
+
+.icon-html {
+  top: 15%;
+  right: 15%;
+  width: 65px;
+  height: 65px;
+  font-size: 2.2rem;
+  color: #e34f26;
+}
+
+.icon-css {
+  bottom: 25%;
+  left: 10%;
+  width: 70px;
+  height: 70px;
+  font-size: 2.5rem;
+  color: #1572b6;
+}
+
+.icon-node {
+  top: 45%;
+  right: -5%;
+  width: 85px;
+  height: 85px;
+  font-size: 3.2rem;
+  color: #339933;
+}
